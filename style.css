@@ -1,0 +1,128 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: flex;
+    margin: 0;
+    background-image: url('photo-1585202900225-6d3ac20a6962.avif');
+    background-size: 38%;
+}
+
+.sidebar {
+    font-family: Norse;
+    display: flex;
+    flex-direction: column;
+    width: 38.5vw;
+    height: 100vh;
+}
+
+.sidebar > p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+    font-size: small;
+    height: 60vh;
+    
+}
+
+.sidebar > p > a {
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 14, 14, 0.5);
+    margin-top: 33vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 18vh;
+}
+
+.logo > img {
+    width: 6.7vw;
+    height: 19vh;
+}
+
+h1 {
+    color: white;
+    font-size: 14vh;
+    margin: 0;
+}
+
+.form {
+    width: 65vw;
+    background-color: rgb(249,250,251);
+}
+
+
+.about > p {
+    font-size: 3.5vh;
+    margin: 0;
+    padding-top: 23.5vh;
+    background-color: #E5E7EB;
+    padding-left: 3.5vw;
+}
+
+.info {
+    padding-left: 3.5vw;
+    margin: 0;
+}
+
+#info-form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5vh;
+    background-color: aqua;
+}
+
+form > p {
+    padding-left: 3.5vw;
+
+}
+
+form > p > a {
+    color: rgb(89,109,72);
+}
+
+.info {
+    display: flex;
+    gap: 5vw;
+    margin-top: 3vh;
+}
+
+.info > div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 3vh;
+    width: 17vw;
+    border-radius: 5px;
+}
+
+input:focus {
+   border: 1px solid red;
+}
+
+label {
+    font-weight: bold;
+
+}
+
+button {
+    border-radius: 8px;
+    margin-top: 5vh;
+    width: 15vw;
+    height: 5vh;
+    font-size: large;
+    color: white;
+    background-color: rgb(89,109,72);
+    border: none;
+    margin-left: 3.5vw;
+}
+

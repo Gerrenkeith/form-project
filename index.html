@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Form</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
     </div>
     <div class="form container">
         <div class="about">
-            <p>
+            <p id="bolt">
                 This is not a real online service! You know you need something <br>
                 like this in your life to help you realize your deepest dreams. <br>
                 Sign up now to get started.
@@ -65,18 +65,18 @@
                     <div class="password info">
                         <div>
                             <label for="password">PASSWORD</label>
-                            <input type="new-password" id="password">
+                            <input type="new-password" id="password" required>
                             <span class="error" aria-live="polite"></span>
                         </div>
 
                         <div>
-                            <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="current-password"  id="confirm_password">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="current-password"  id="confirm-password" required >
                         </div>
                     </div>
                 </div>
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="">Log in</a></p>
+                <input type="submit" value="Create Account">
+                <p>Already have an account? <a href="#">Log in</a></p>
             </form>
         </div>
     </div>

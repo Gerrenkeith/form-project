@@ -5,16 +5,16 @@ body {
     font-weight: 600;
     display: flex;
     margin: 0;
-    background-image: url('photo-1585202900225-6d3ac20a6962.avif');
-    background-size: 38%;
+    height: 100%;
 }
 
-.sidebar {
-    font-family: Norse;
+.sidebar {   
     display: flex;
     flex-direction: column;
     width: 38.5vw;
-    height: 100vh;
+    height: 130vh;
+    background-image: url('photo-1585202900225-6d3ac20a6962.avif');
+    background-size: cover;
 }
 
 .sidebar > p {
@@ -22,13 +22,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;    
-    font-size: small;
+    font-size: 15px;
     height: 60vh;
-    
+    gap: 10px;
+    margin-top: 15vh;
 }
 
 .sidebar > p > a {
     color: white;
+    word-spacing: 5px;
+    justify-content: space-between;
 }
 
 .logo {
@@ -36,7 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(14, 14, 14, 0.5);
-    margin-top: 33vh;
+    margin-top: 28vh;
     padding-top: 20px;
     padding-bottom: 20px;
     height: 18vh;
@@ -51,11 +54,13 @@ h1 {
     color: white;
     font-size: 14vh;
     margin: 0;
+    font-family: Norse;
 }
 
 .form {
     width: 65vw;
     background-color: rgb(249,250,251);
+    height: 100%;
 }
 
 
@@ -63,8 +68,8 @@ h1 {
     font-size: 3.5vh;
     margin: 0;
     padding-top: 23.5vh;
-    background-color: #E5E7EB;
     padding-left: 3.5vw;
+    background-color: rgb(255,255,255);
 }
 
 .info {
@@ -76,7 +81,8 @@ h1 {
     display: flex;
     flex-direction: column;
     padding-bottom: 5vh;
-    background-color: aqua;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 form > p {
@@ -100,14 +106,17 @@ form > p > a {
 }
 
 input {
-    height: 3vh;
+    height: 4vh;
     width: 17vw;
     border-radius: 5px;
+    border:1px solid rgb(225,226,227);
 }
 
 input:focus {
-   border: 1px solid red;
-}
+    outline: 1px solid #4A6FD6;
+    box-shadow: 2px 2px 3px;
+} 
+
 
 label {
     font-weight: bold;
@@ -117,12 +126,18 @@ label {
 button {
     border-radius: 8px;
     margin-top: 5vh;
-    width: 15vw;
-    height: 5vh;
-    font-size: large;
+    width: 13vw;
+    height: 6vh;
+    font-size: larger;
     color: white;
     background-color: rgb(89,109,72);
     border: none;
     margin-left: 3.5vw;
+    margin-bottom: 3.1vh;
 }
 
+span.error {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: red;
+}
